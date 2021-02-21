@@ -36,7 +36,7 @@ karmadata.forEach(function (arrayItem) {
       
       <div class="row">
             <div class="col s4">
-                  <img class="responsive-img productpic" src="./img/${arrayItem.name}.png">
+                  <img class="responsive-img productpic" src="https://raw.githubusercontent.com/sahandbabali/Karmatools/main/img/${arrayItem.name}.png">
             </div>
             <div class="col s4">
                   <h5>${arrayItem.name}</h5>
