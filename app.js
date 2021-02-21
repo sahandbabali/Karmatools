@@ -1,22 +1,22 @@
 var karmadata = [
-  { name: "E1A", small: 1, larg: 0 },
-  { name: "E1B", small: 0, larg: 1 },
-  { name: "E2A", small: 2, larg: 0 },
-  { name: "E3A", small: 3, larg: 0 },
-  { name: "E2C", small: 1, larg: 1 },
-  { name: "E3L", small: 3, larg: 0 },
-  { name: "E2L", small: 1, larg: 1 },
-  { name: "E3B", small: 2, larg: 1 },
-  { name: "E4A", small: 4, larg: 0 },
-  { name: "E2B", small: 0, larg: 2 },
-  { name: "E5A", small: 4, larg: 1 },
-  { name: "E6A", small: 6, larg: 0 },
-  { name: "E4C", small: 2, larg: 2 },
-  { name: "E4B", small: 2, larg: 2 },
-  { name: "E5B", small: 4, larg: 1 },
-  { name: "E9A", small: 9, larg: 0 },
-  { name: "E6B", small: 3, larg: 3 },
-  { name: "E7A", small: 5, larg: 2 },
+  { name: "E1A", small: 1, large: 0 },
+  { name: "E1B", small: 0, large: 1 },
+  { name: "E2A", small: 2, large: 0 },
+  { name: "E3A", small: 3, large: 0 },
+  { name: "E2C", small: 1, large: 1 },
+  { name: "E3L", small: 3, large: 0 },
+  { name: "E2L", small: 1, large: 1 },
+  { name: "E3B", small: 2, large: 1 },
+  { name: "E4A", small: 4, large: 0 },
+  { name: "E2B", small: 0, large: 2 },
+  { name: "E5A", small: 4, large: 1 },
+  { name: "E6A", small: 6, large: 0 },
+  { name: "E4C", small: 2, large: 2 },
+  { name: "E4B", small: 2, large: 2 },
+  { name: "E5B", small: 4, large: 1 },
+  { name: "E9A", small: 9, large: 0 },
+  { name: "E6B", small: 3, large: 3 },
+  { name: "E7A", small: 5, large: 2 },
 ];
 
 var totalorders = 0;
@@ -63,7 +63,7 @@ document.getElementById("cal").addEventListener("click", function () {
   inputArray.forEach(function (inp , i) {
     totalorders += parseInt(inp.value);
       smalls += karmadata[i].small * parseInt(inp.value);
-      largs += karmadata[i].larg * parseInt(inp.value);
+      largs += karmadata[i].large * parseInt(inp.value);
 
   });
 
