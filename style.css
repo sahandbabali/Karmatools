@@ -1,0 +1,20 @@
+.nav-wrapper {
+      padding-left: 1rem;
+}
+
+.productcard {
+      margin: 1rem 0;
+      padding: 1rem;
+      border: 1px solid gray;
+      border-radius: 10px;
+}
+
+
+
+.productpic {
+      width: 8rem;
+}
+.main {
+      padding: 1rem;
+}
+
