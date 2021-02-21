@@ -41,7 +41,7 @@ karmadata.forEach(function (arrayItem) {
             <div class="col s4">
                   <h5>${arrayItem.name}</h5>
                   <p>Small: <span>${arrayItem.small}</span></p>
-                  <p>Larg: <span>${arrayItem.larg}</span></p>
+                  <p>Large: <span>${arrayItem.large}</span></p>
             </div>
             <div class="col s4">
                   <label for="quant">Quantity:</label>
