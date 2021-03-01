@@ -21,3 +21,15 @@ body {
       background-color: #DCDCDC;
 }
 
+
+.borderwhite {
+      border: 1px solid lightgray;
+      border-radius: 10px;
+      
+}
+
+.borderdark {
+      border:1px solid lightgray;
+      border-radius: 10px;
+     
+}
