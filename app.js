@@ -29,6 +29,7 @@ var C = 0;
 var I = 0;
 var II = 0;
 var III = 0;
+var totalwood = 0;
 
 
 
@@ -119,7 +120,7 @@ document.getElementById("cal").addEventListener("click", function () {
       II += karmadata[i].II * parseInt(inp.value);
       III += karmadata[i].III * parseInt(inp.value);
 
-
+      totalwood = A *11 + B * 22 + C * 33 + I * 8 + II * 18 + III * 27;
   });
 
   document.getElementById("totalorders").innerHTML = totalorders;
@@ -134,5 +135,8 @@ document.getElementById("C").innerHTML = C;
 document.getElementById("I").innerHTML = I;
 document.getElementById("II").innerHTML = II;
 document.getElementById("III").innerHTML = III;
+
+document.getElementById("totalwood").innerHTML = totalwood;
+
 });
 
