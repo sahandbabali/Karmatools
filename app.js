@@ -32,7 +32,7 @@ var I = 0;
 var II = 0;
 var III = 0;
 var totalwood = 0;
-
+var nom = 0;
 
 
 
@@ -95,7 +95,7 @@ karmadata.forEach(function (arrayItem) {
             </div>
             <div class="col s4">
                   <label for="quant">Quantity:</label>
-                  <input id="${arrayItem.name}"  type="number" name="quant" value=0>
+                  <input class="quantinp" id="${arrayItem.name}"  type="number" name="quant" value=0>
             </div>
       </div>
       
@@ -108,12 +108,13 @@ karmadata.forEach(function (arrayItem) {
 
 document.getElementById("cal").addEventListener("click", function () {
 
-  inputArray = Array.from(document.getElementsByTagName("input"));
+  inputArray = Array.from(document.getElementsByClassName("quantinp"));
 
   inputArray.forEach(function (inp , i) {
-
+      
       if(parseInt(inp.value) > 0){
-document.getElementById("tbody").innerHTML += `<tr><td>${karmadata[i].name}</td><td>${parseInt(inp.value)}</td></tr>`;
+            nom += 1;
+            document.getElementById("tbody").innerHTML += `<tr><td>${nom}</td><td>${karmadata[i].name}</td><td>${parseInt(inp.value)}</td></tr>`;
       }
 
 
