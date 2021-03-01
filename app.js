@@ -111,6 +111,12 @@ document.getElementById("cal").addEventListener("click", function () {
   inputArray = Array.from(document.getElementsByTagName("input"));
 
   inputArray.forEach(function (inp , i) {
+
+      if(parseInt(inp.value) > 0){
+document.getElementById("tbody").innerHTML += `<tr><td>${karmadata[i].name}</td><td>${parseInt(inp.value)}</td></tr>`;
+      }
+
+
     totalorders += parseInt(inp.value);
       smalls += karmadata[i].small * parseInt(inp.value);
       largs += karmadata[i].large * parseInt(inp.value);
@@ -121,6 +127,8 @@ document.getElementById("cal").addEventListener("click", function () {
       I += karmadata[i].I * parseInt(inp.value);
       II += karmadata[i].II * parseInt(inp.value);
       III += karmadata[i].III * parseInt(inp.value);
+
+
 
       totalwood = A *11 + B * 22 + C * 33 + I * 8 + II * 18 + III * 27;
   });
