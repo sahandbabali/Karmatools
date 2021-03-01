@@ -51,7 +51,7 @@ karmadata.forEach(function (arrayItem) {
             <div class="col s4">
                   <img class="responsive-img productpic" src="https://raw.githubusercontent.com/sahandbabali/Karmatools/main/img/${arrayItem.name}.png">
             </div>
-            <div class="col s4">
+            <div class="col s5">
                   <h5>${arrayItem.name}</h5>
                   
                   <div class="row borderdark">
@@ -93,7 +93,7 @@ karmadata.forEach(function (arrayItem) {
                   
 
             </div>
-            <div class="col s4">
+            <div class="col s3">
                   <label for="quant">Quantity:</label>
                   <input class="quantinp" id="${arrayItem.name}"  type="number" name="quant" value=0>
             </div>
