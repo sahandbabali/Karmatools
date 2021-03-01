@@ -19,6 +19,8 @@ var karmadata = [
   { name: "E7A", small: 5, large: 2, I: 0, II: 0, III: 0, A: 0, B: 0, C: 4 },
 ];
 
+
+
 var inputArray = [];
 var totalorders = 0;
 var smalls = 0;
@@ -140,3 +142,19 @@ document.getElementById("totalwood").innerHTML = totalwood;
 
 });
 
+document.getElementById("printkon").addEventListener("click", printkon);
+
+function printkon () {
+
+      var element = document.getElementById('infobox');
+var opt = {
+      margin:       1,
+      filename:     'myfile.pdf',
+      image:        { type: 'jpeg', quality: 0.98 },
+      html2canvas:  { scale: 1 },
+      jsPDF:        { unit: 'cm', format: 'a4', orientation: 'portrait' }
+    };
+
+html2pdf(element, opt);
+
+}
